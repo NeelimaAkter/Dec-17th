@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML tag practice</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h3>The q element</h3>
+<p>Jhal muri is a <q>spicy puffed rice</q> snack that is loved by everyone</p>
+
+<h3>The s element</h3>
+<p><s>Only 10!</s></p>
+<p>5 seats left for this week's trip to Niagara!!</p>
+<h3>The samp element</h3>
+<p>Sometimes this is how messages look like -<br><samp>when your computer is being hacked</samp></p>
+<h2>The section element</h2>
+<section>
+<h3>Rich Dad, Poor Dad</h3>
+<p>Rich Dad, Poor Dad is one of the most famous books in all of personal finance. Though it came out in 1997, it's still a #1 Best Seller on Amazon in 2022. Many of today's most popular finance gurus cite it as the inspiration for their success</p>
+</section>
+<section>
+<h3>Seerah</h3>
+A person's sīra is that person's journey through life, or biography, encompassing their birth, events in their life, manners and characteristics, and their death. In modern usage it may also refer to a person's resume. It is sometimes written as "seera", "sirah" or "sirat", all meaning "life" or "journey".
+</section>
+<h3>The select element</h3>
+<p>The select element is used to create a drop-down list</p>
+<form action="/action_page.php">
+	<label for="food">Choose an item</label>
+	<select name="foods" id="foods">
+	<option value="chotpoti">Chotpoti</option>
+	<option value="chotpoti">Jhalmuri</option>
+	<option value="chotpoti">Beguni</option>
+	<option value="chotpoti">Piazu</option>
+</select>
+<br><br>
+<input type="submit" value="Submit">
+</form>
+<h3>The small text</h3>
+<p>This is some normal element</p>
+<p><small>This is some smaller text</small></p>
+<h3>The span element</h3>
+<p>Regions of Earth near the North and South Pole often display bright, colorful lights in their night skies. These are called <span style="color:blueviolet;font-weight:bold;">auroras ⎯ the aurora borealis </span>in the northern hemisphere and the aurora australis in the southern hemisphere.</p>
+<h3>The strong element</h3>
+<p>This text is normal</p>
+<p><strong>This means we're emphasizing</strong> </p>
+<h3>The sub and sup element</h3>
+<p>The sub element used in Chemistry, such as water is written as H<sub>2</sub>O</p>
+<p>The sup element is used in math such as 2<sup>2</sup> is equals to 4.</p>
+<h3>The summary element</h3>
+<details>
+<summary>Water</summary>
+<p>Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms. It is vital for all known forms of life, despite providing neither food, energy, nor organic micronutrients.</p>
+</details>
+<h3>The svg element</h3>
+<svg width="100" height="100">
+	<circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="green"/>
+</svg>
+<h3>The template element</h3>
+<button onclick="showContent()">Show hidden content</button>
+<template>
+<h2>Chicken</h2>
+<img src="images/chicken.jpg" width="300" height="300">
+</template>
+<script>
+function showContent() {
+	var temp = document.getElementsByTagName("template")[0];
+	var clon = temp.content.cloneNode(true);
+	document.body.appendChild(clon);
+}
+</script>
+<h3>The time elements</h3>
+<p>Food court is open from <time>10:00</time> to <time>21:00</time> everyday.	</p>
+<h3>The u element</h3>
+<p>Shows <u>underlined</u> texts</p>
+<!--css start-->
+<div class="box">Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms. It is vital for all known forms of life, despite providing neither food, energy, nor organic micronutrients.</div>
+</body>
+</html>
